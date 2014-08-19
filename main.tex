@@ -46,6 +46,10 @@
   \setbeamercolor{frametitle}{fg = black}
   \setbeamercovered{transparent}
 
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
+
 %\titlegraphic{\includegraphics{figs/ifsc_usp}}
 
 % \defbeamertemplate*{title page}{customized}[1][]
@@ -127,7 +131,7 @@
     }
 }
 %\usepackage[numberedbib]{apacite}
-\usepackage{natbib} 
+\usepackage[numbers]{natbib} 
 \usepackage{multicol}
 
 \title[Um estudo quantitativo sobre a evolução de
@@ -1719,6 +1723,15 @@ menor sobreposição.
 \end{figure}  
 }
 
+\only<3>{
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=.9\textwidth]{figs/webapp} 
+      \caption{Aplicativo Web para melhor visualização da projeção. \url{http://automata.github.io/viz-paintings/}.}
+\end{center}
+\end{figure}  
+}
+
 \end{frame}
 
 \begin{frame}{Trabalhos futuros}
@@ -1760,12 +1773,13 @@ menor sobreposição.
 
  \nocite{*}
 
-\section{Referências}
+%\section{Referências}
 
 \begin{frame}[allowframebreaks]{Referências}
 
 %\bibliographystyle{apacite}
 \bibliographystyle{plainnat}
+%\bibliographystyle{amsalpha}
 \bibliography{main}
 \end{frame}
 
